@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: linear-gradient(135deg, magenta, cyan);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.password-box {
+  border: 2px solid black;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 5px 15px 95px rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+}
+
+.password-box div {
+  margin: 10%;
+  padding-left: 15%;
+}
+.head {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.password-box input {
+  width: fit-content;
+}
+.input-data,
+.output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-data input,
+.output input {
+  height: 38px;
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+.input-data input:hover,
+.output input:hover {
+  border: 2px solid green;
+}
+.input-data button,
+.output button {
+  height: 38px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: yellow;
+  cursor: pointer;
+}
+.input-data button:hover,
+.output button:hover {
+  background-color: greenyellow;
+  border-radius: 10px;
+  transition: border-radius 0.9 ease;
+}
